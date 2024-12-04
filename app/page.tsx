@@ -1,7 +1,11 @@
-
+"use client"
+import Navbar from "./components/Landing/Navbar";
+import "flowbite";
 
 export default function Home() {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <Navbar />
+    </div>
   )
 }
