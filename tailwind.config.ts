@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import flowbitePlugin from 'flowbite/plugin';
 
 export default {
   content: [
@@ -15,6 +16,6 @@ export default {
       },
     },
   },
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  plugins: [require('flowbite/plugin')],
+  
+  plugins: [flowbitePlugin],
 } satisfies Config;
