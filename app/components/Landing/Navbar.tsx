@@ -1,9 +1,10 @@
+import Image from "next/image";
 import SwitchTheme from "./SwitchTheme";
 
 export default function Navbar() {
     return (
-        <div className="bg-base-300 shadow-xl fixed top-0 left-0 w-full z-50">
-            <div className="navbar mx-auto lg:max-w-screen-lg md:max-w-screen-md">
+        <div className="bg-base-300 shadow-xl fixed top-0 left-0 w-full z-50 px-3">
+            <div className="navbar mx-auto max-w-screen-xl">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +37,7 @@ export default function Navbar() {
         <li><a>Kontak</a></li>
       </ul>
     </div>
-    <a className="text-xl font-bold">SMK Sangkuriang 1 Cimahi</a>
+    <Image src="/logosekolah.png" width={50} height={50} alt="logo"></Image>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

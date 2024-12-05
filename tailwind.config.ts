@@ -1,9 +1,11 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: 'selector',
   daisyui: {
     themes: [
       "light",
+      "dark",
       "cupcake",
       "bumblebee",
       "emerald",
