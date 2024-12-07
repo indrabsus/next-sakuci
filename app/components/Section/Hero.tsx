@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function Jurusan(){
+export default function Hero(){
     return (
-        <section className="hero min-h-screen mx-auto" id="home" 
+        <section className="hero min-h-screen m-auto pt-40" id="home" 
         >
-  <div className="hero-content flex-col lg:flex-row-reverse mx-11 gap-20 bg-base-300 bg-opacity-70 rounded-xl py-10">
+  <div className="hero-content flex-col lg:flex-row-reverse mx-11 gap-20 bg-base-300 bg-opacity-70 rounded-xl p-10">
     <Image
       src="/akre.png" width={800} height={800} alt="jt"
       className="hidden lg:block max-w-sm" />

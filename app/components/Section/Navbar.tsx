@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SwitchTheme from "../utils/SwitchTheme";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -37,11 +38,12 @@ export default function Navbar() {
     <li><a href="#jurusan">Jurusan</a></li>
     <li><a href="#ekstrakurikuler">Ekstrakurikuler</a></li>
     <li><a href="#kontak">Kontak</a></li>
-    <li className="bg-blue-500 rounded-md text-white ml-5"><a>Login</a></li>
+    
     </ul>
   </div>
   <div className="navbar-end">
     <SwitchTheme />
+    <div className="btn btn-primary btn-sm ml-11"><Link href="/login">Login</Link></div>
   </div>
 </div>
         </div>

@@ -1,9 +1,10 @@
 import Contact from "./components/Section/Contact";
 import JurusanCard from "./components/utils/JurusanCard";
 import Footer from "./components/Section/Footer";
-import Hero from "./components/Section/Jurusan";
+import Hero from "./components/Section/Hero";
 import Navbar from "./components/Section/Navbar";
 import EkskulCard from "./components/utils/EkskulCard";
+
 
 const jurusan = [
   {
