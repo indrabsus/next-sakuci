@@ -1,12 +1,11 @@
 // services/authService.ts
-export async function handleLogin(username: string, password: string) {
+export async function handleLogin(id: string) {
     try {
-        const response = await fetch('https://sakuci.id/api/login', {
-            method: 'POST',
+        const response = await fetch('http://skuliodigital.test/api/dataguru/'+id, {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username, password }),
         });
 
         const data = await response.json();
