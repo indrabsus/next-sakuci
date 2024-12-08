@@ -65,7 +65,11 @@ export default function Welcome() {
     }, []);
 
     if (isLoading) {
-        return <div>Loading...</div>;
+        return (
+            <div className="flex items-center justify-center h-screen">
+                <span className="loading loading-spinner loading-lg"></span>
+            </div>
+        );
     }
 
     if (error) {
@@ -77,7 +81,8 @@ export default function Welcome() {
     }
 
     return (
-        <div className="bg-base-300 max-w-screen-xl mx-auto h-full mt-3 rounded-xl w-full">
+        <div className="mx-5">
+            <div className="max-w-screen-xl h-full mt-3 rounded-xl mx-auto bg-base-300">
             <div className="p-10">
                 <h1 className="text-xl font-bold mt-5">Data Diri</h1>
                 <hr />
@@ -96,6 +101,7 @@ export default function Welcome() {
                     </tr>
                 </table>
             </div>
+        </div>
         </div>
     );
 }

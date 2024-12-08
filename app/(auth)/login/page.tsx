@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { handleLogin } from "../../services/authService";
+import { handleLogin } from "../../services/auth/loginService";
 import Swal from "sweetalert2";
 
 
